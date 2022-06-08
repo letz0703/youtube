@@ -1,3 +1,8 @@
 {
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#413a38d0",
+    "titleBar.inactiveBackground": "#8a6d02",
+    "sideBarTitle.foreground": "#efefef"
+  },
   "workbench.colorTheme": "Winter is Coming (Dark Black)"
 }
