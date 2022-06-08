@@ -23,7 +23,7 @@
     "prettier/prettier": "error",
     "quotes": ["error", "double", { "avoidEscape": true }],
     "react/jsx-filename-extension": ["off", "double"],
-    "react/react-in-jsx-scope": ["off", "double"],
+    "react/react-in-jsx-scope": ["off"],
     "react/jsx-uses-react": ["off"],
     "react/jsx-props-no-spreading": ["warn"],
     "no-shadow": "off"
