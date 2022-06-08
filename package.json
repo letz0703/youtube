@@ -21,9 +21,9 @@
     "eject": "react-scripts eject",
     "lint": "eslint '**/*.{js,jsx}'",
     "fix": "eslint '**/*.{js,jsx}' --fix",
+    "prepare": "husky install",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build",
-    "prepare": "husky install"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
