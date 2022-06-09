@@ -87,7 +87,6 @@ export default class App extends Component {
       }
       return row;
     });
-    this.setState({ ytlists });
   };
 
   render() {

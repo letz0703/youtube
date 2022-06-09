@@ -4,6 +4,7 @@
     "es2021": true,
     "jest": true
   },
+  "ignorePatterns": ["**/*.jsx", "**/vendor/*.js"],
   "extends": [
     "react-app",
     "react-app/jest",
@@ -30,10 +31,30 @@
     "no-unused-vars": "off",
     "react/prefer-stateless-function": "off",
     "react/destructuring-assignment": "off",
-    "react/prop-types": "off",
     "arrow-body-style": "off",
     "react/state-in-constructor": "off",
     "react/no-access-state-in-setstate": "off",
-    "array-callback-return": "off"
+    "array-callback-return": "off",
+    "no-unused-expressions": "off",
+    "allowInParentheses": "off",
+    "no-restricted-syntax": ["error", "SequenceExpression"],
+    "react/prop-types": 0,
+    "indent": ["error", 2],
+    "linebreak-style": 1,
+    "react/jsx-no-bind": [
+      "error",
+      {
+        "allowArrowFunctions": true,
+        "allowBind": false,
+        "ignoreRefs": true
+      }
+    ],
+    "react/no-did-update-set-state": "error",
+    "react/no-unknown-property": "error",
+    "react/no-unused-prop-types": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "no-console": "off",
+    "compat/compat": "off"
   }
 }
