@@ -10,7 +10,7 @@ export default class App extends Component {
         etag: "NslzT8APA_D9Ocnnx_D4wQBsb2o",
         id: {
           kind: "youtube#video",
-          videoId: "4kvC2gxoH80",
+          videoId: "4kvC2gxoH80"
         },
         snippet: {
           publishedAt: "2020-09-08T13:24:17Z",
@@ -23,30 +23,30 @@ export default class App extends Component {
             default: {
               url: "https://i.ytimg.com/vi/4kvC2gxoH80/default.jpg",
               width: 120,
-              height: 90,
+              height: 90
             },
             medium: {
               url: "https://i.ytimg.com/vi/4kvC2gxoH80/mqdefault.jpg",
               width: 320,
-              height: 180,
+              height: 180
             },
             high: {
               url: "https://i.ytimg.com/vi/4kvC2gxoH80/hqdefault.jpg",
               width: 480,
-              height: 360,
-            },
+              height: 360
+            }
           },
           channelTitle: "TVCHOSUN - TV조선",
           liveBroadcastContent: "none",
-          publishTime: "2020-09-08T13:24:17Z",
-        },
+          publishTime: "2020-09-08T13:24:17Z"
+        }
       },
       {
         kind: "youtube#searchResult",
         etag: "O6IA7Pl11ufXplhMqN5-5l4NsK4",
         id: {
           kind: "youtube#video",
-          videoId: "3BORcIf2Yo8",
+          videoId: "3BORcIf2Yo8"
         },
         snippet: {
           publishedAt: "2022-03-02T11:00:26Z",
@@ -59,37 +59,29 @@ export default class App extends Component {
             default: {
               url: "https://i.ytimg.com/vi/3BORcIf2Yo8/default.jpg",
               width: 120,
-              height: 90,
+              height: 90
             },
             medium: {
               url: "https://i.ytimg.com/vi/3BORcIf2Yo8/mqdefault.jpg",
               width: 320,
-              height: 180,
+              height: 180
             },
             high: {
               url: "https://i.ytimg.com/vi/3BORcIf2Yo8/hqdefault.jpg",
               width: 480,
-              height: 360,
-            },
+              height: 360
+            }
           },
           channelTitle: "비하인드 ",
           liveBroadcastContent: "none",
-          publishTime: "2022-03-02T11:00:26Z",
-        },
-      },
-    ],
-  };
-
-  handleList = (ytlist) => {
-    const ytlists = this.state.ytlists.map((row) => {
-      if (row.id === ytlist.id) {
-        return { ...ytlist };
+          publishTime: "2022-03-02T11:00:26Z"
+        }
       }
-      return row;
-    });
+    ]
   };
 
   render() {
+    const youtubeLists = [...this.state.ytlists];
     return (
       <>
         <link
@@ -97,7 +89,7 @@ export default class App extends Component {
           href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"
         />
         <div>
-          <YtLists ytlists={this.state.ytlists} handleList={this.handleList} />
+          <YtLists ytlists={youtubeLists} />
         </div>
       </>
     );
