@@ -2,16 +2,12 @@
   "env": {
     "browser": true,
     "es2021": true,
-    "jest": true
+    "jest": true,
+    "commonjs": true,
+    "node": true
   },
-  "ignorePatterns": ["**/*.jsx", "**/vendor/*.js"],
-  "extends": [
-    "react-app",
-    "react-app/jest",
-    "plugin:react/recommended",
-    "airbnb",
-    "prettier"
-  ],
+  "extends": ["prettier", "react-app"],
+  "root": true,
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -19,7 +15,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "prettier"],
+  "plugins": ["prettier"],
   "rules": {
     "prettier/prettier": "error",
     "quotes": ["error", "double", { "avoidEscape": true }],
@@ -32,12 +28,12 @@
     "react/prefer-stateless-function": "off",
     "react/destructuring-assignment": "off",
     "arrow-body-style": "off",
+    "prefer-arrow-callback": "off",
     "react/state-in-constructor": "off",
     "react/no-access-state-in-setstate": "off",
     "array-callback-return": "off",
     "no-unused-expressions": "off",
     "allowInParentheses": "off",
-    "no-restricted-syntax": ["error", "SequenceExpression"],
     "react/prop-types": 0,
     "indent": ["error", 2],
     "linebreak-style": 1,
@@ -50,11 +46,22 @@
       }
     ],
     "react/no-did-update-set-state": "error",
-    "react/no-unknown-property": "error",
-    "react/no-unused-prop-types": "error",
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
+    "react/no-unknown-property": 0,
+    "react/no-unused-prop-types": 0,
+    "compat/compat": "off",
     "no-console": "off",
-    "compat/compat": "off"
+    "no-const-assign": "warn",
+    "no-this-before-super": "warn",
+    "no-undef": "warn",
+    "no-unreachable": "warn",
+    "no-use-before-define": "warn",
+    "constructor-super": "warn",
+    "valid-typeof": "warn",
+    "jsx-quotes": ["error", "prefer-double"],
+    "space-before-function-paren": ["error", "never"],
+    "comma-dangle": ["error", "never"],
+    "import/extensions": 0,
+    "import/no-unresolved": "off",
+    "no-restricted-syntax": ["error", "SequenceExpression"]
   }
 }

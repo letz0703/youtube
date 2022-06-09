@@ -2,7 +2,7 @@
   "workbench.colorCustomizations": {
     "editor.background": "#292929",
     "[Winter is Coming (Dark Black)]": {
-      "editorLineNumber.activeForeground": "#5d6366",
+      "editorLineNumber.activeForeground": "#25a4ed",
       "editorLineNumber.foreground": "#7d7979"
     },
     "[Flatland Dark]": {
@@ -13,6 +13,7 @@
       "editorGutter.background": "#10141C",
       "editor.lineHighlightBorder": "#292929"
     },
+<<<<<<< Updated upstream
     "titleBar.inactiveBackground": "#753a07",
     "sideBarTitle.foreground": "#753a07",
     "sideBarSectionHeader.foreground": "#ffffff",
@@ -51,5 +52,5 @@
       "regex": ".*/desktop/.*"
     }
   ],
-  "window.title": "~[title]~${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${dirty}${activeEditorMedium} ${separator} ${rootName}"
+  "window.title": "~[title]~${separator}${dirty}${activeEditorMedium} ${separator} ${rootName}"
 }
