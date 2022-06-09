@@ -28,6 +28,8 @@
     "react/jsx-props-no-spreading": ["warn"],
     "no-shadow": "off",
     "no-unused-vars": "off",
-    "react/prefer-stateless-function": "off"
+    "react/prefer-stateless-function": "off",
+    "react/destructuring-assignment": "off",
+    "react/prop-types": "off"
   }
 }
