@@ -1,8 +1,55 @@
 {
   "workbench.colorCustomizations": {
-    "titleBar.activeBackground": "#8a6d02",
-    "titleBar.inactiveBackground": "#8a6d02",
-    "sideBarTitle.foreground": "#98a257"
+    "editor.background": "#292929",
+    "[Winter is Coming (Dark Black)]": {
+      "editorLineNumber.activeForeground": "#5d6366",
+      "editorLineNumber.foreground": "#7d7979"
+    },
+    "[Flatland Dark]": {
+      "editor.background": "#292929",
+      "editor.lineHighlightBorder": "#1b1e2b"
+    },
+    "[Cobalt2]": {
+      "editorGutter.background": "#10141C",
+      "editor.lineHighlightBorder": "#292929"
+    },
+    "titleBar.inactiveBackground": "#753a07",
+    "sideBarTitle.foreground": "#753a07",
+    "sideBarSectionHeader.foreground": "#ffffff",
+    "tab.activeBorder": "#242937",
+    "titleBar.activeBackground": "#242937",
+    "titleBar.activeForeground": "#ffffff",
+    "activityBar.background": "#242937",
+    "activityBar.foreground": "#ffffff",
+    "statusBar.background": "#242937",
+    "statusBar.foreground": "#ffffff"
   },
-  "workbench.colorTheme": "Winter is Coming (Dark Black)"
+  "workbench.colorTheme": "Winter is Coming (Dark Black)",
+  "colorTabs.config": [
+    {
+      "regex": "src/*.css",
+      "label": "css"
+    },
+    {
+      "regex": "src/.*",
+      "color": "#242937",
+      "label": "title"
+    },
+    {
+      "regex": "src/components/*.jsx"
+    },
+    {
+      "regex": ".*/mobile/.*",
+      "color": "#FF0000",
+      "label": "MOBILE"
+    },
+    {
+      "regex": ".*/web/.*",
+      "color": "#00FF00"
+    },
+    {
+      "regex": ".*/desktop/.*"
+    }
+  ],
+  "window.title": "~[title]~${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${dirty}${activeEditorMedium} ${separator} ${rootName}"
 }

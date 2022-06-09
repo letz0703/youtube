@@ -1,7 +1,16 @@
-import React, { Component } from "react";
+import React, { memo } from "react";
 
-export default class Ytlist extends Component {
-  render() {
-    return <div className="f2">{this.props.items}</div>;
-  }
-}
+const Ytlist = memo((props) => {
+  const ytem = props.ytlist.snippet;
+  const { title, description } = ytem;
+  return (
+    <li>
+      <div className="">
+        <h1>{title}</h1>
+        <p>{description}</p>
+      </div>
+    </li>
+  );
+});
+
+export default Ytlist;
