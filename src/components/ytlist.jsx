@@ -5,9 +5,9 @@ const Ytlist = memo((props) => {
   const { title, description } = ytem;
   return (
     <li>
-      <div className="">
+      <div className="pl4">
         <h1>{title}</h1>
-        <p>{description}</p>
+        <p className="f3">{description}</p>
       </div>
     </li>
   );
