@@ -1,13 +1,13 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
+import VideoList from "./components/video_list";
 
 function App() {
-  const [video, setVideo] = useState([]);
-  const [name, setName] = useState("letz");
+  const [videos, setVideos] = useState([]);
 
   useEffect(() => {
     //paste postman code here
-    var requestOptions = {
+    const requestOptions = {
       method: "GET",
       redirect: "follow"
     };
@@ -16,10 +16,11 @@ function App() {
       "https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=25&regionCode=US&key=AIzaSyCTNuUzbi5oPOZWRYAT-0rJF9jZKrKWfSM&key=AIzaSyCTNuUzbi5oPOZWRYAT-0rJF9jZKrKWfSM",
       requestOptions
     )
-      .then((response) => response.text())
-      .then((result) => console.log(result))
+      .then((response) => response.json())
+      .then((result) => setVideos(result.items))
       .catch((error) => console.log("error", error));
   }, []);
+  // end of postman fetch
 
   return (
     <>
@@ -29,6 +30,7 @@ function App() {
       />
       <div>
         <h1>Working!!!</h1>
+        <VideoList videos={videos} />
       </div>
     </>
   );
