@@ -3,4 +3,4 @@ video_list.jsx
 video_item.jsx
 github: vanilla release
 
-- [] app.jsx snippet
+- [x] app.jsx snippet: appjsx
