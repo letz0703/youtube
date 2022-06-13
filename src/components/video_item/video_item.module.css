@@ -1,0 +1,47 @@
+.container {
+  padding: 0.2em;
+}
+
+.video {
+  cursor: pointer;
+  border: 1px solid lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+}
+
+.video:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.thumb {
+  height: 100%;
+}
+
+.title,
+.channel {
+  font-size: .8em;
+  margin: 0;
+  text-overflow: hidden;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: red;
+  padding: 1em;
+}
+
+.metadata {
+  margin-left: .2em;
+}
+
+.channel {
+  font-size: 0.9rem;
+}
+/*# sourceMappingURL=video_item.module.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAA;EACL,OAAO,EAAE,IAAI;CAEd",
+    "sources": [
+        "video_list.module.scss"
+    ],
+    "names": [],
+    "file": "video_list.module.css"
+}
