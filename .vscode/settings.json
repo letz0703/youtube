@@ -13,7 +13,6 @@
       "editorGutter.background": "#10141C",
       "editor.lineHighlightBorder": "#292929"
     },
-<<<<<<< Updated upstream
     "titleBar.inactiveBackground": "#753a07",
     "sideBarTitle.foreground": "#753a07",
     "sideBarSectionHeader.foreground": "#ffffff",
@@ -25,7 +24,7 @@
     "statusBar.background": "#242937",
     "statusBar.foreground": "#ffffff"
   },
-  "workbench.colorTheme": "Winter is Coming (Dark Black)",
+  "workbench.colorTheme": "Nord",
   "colorTabs.config": [
     {
       "regex": "src/*.css",
@@ -52,5 +51,5 @@
       "regex": ".*/desktop/.*"
     }
   ],
-  "window.title": "~[title]~${separator}${dirty}${activeEditorMedium} ${separator} ${rootName}"
+  "window.title": "~[title]~${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${dirty}${activeEditorMedium} ${separator} ${rootName}"
 }

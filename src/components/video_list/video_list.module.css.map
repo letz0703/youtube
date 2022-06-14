@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,OAAO,CAAA;EACL,OAAO,EAAE,IAAI;CAEd",
+    "mappings": "AAAA,AAAA,OAAO,CAAC;EACN,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,GAAG;CAGX",
     "sources": [
         "video_list.module.scss"
     ],

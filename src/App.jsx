@@ -1,6 +1,7 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
 import VideoList from "./components/video_list/video_list";
+import styles from "./app.module.css";
 
 function App() {
   const [videos, setVideos] = useState([]);
@@ -23,16 +24,11 @@ function App() {
   // end of postman fetch
 
   return (
-    <>
-      <link
-        rel="stylesheet"
-        href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"
-      />
-      <div>
-        <h1>Working!!!</h1>
+    <div>
+      <ul className={styles.ul}>
         <VideoList videos={videos} />
-      </div>
-    </>
+      </ul>
+    </div>
   );
 }
 

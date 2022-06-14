@@ -1,4 +1,8 @@
-.videos{
+.videos {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  width: 45%;
+  //   list-style: none;
+  //   padding-left: 0;
 }
