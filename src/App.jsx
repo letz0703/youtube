@@ -1,4 +1,3 @@
-import "./App.css";
 import React, { useState, useEffect } from "react";
 import VideoList from "./components/video_list/video_list";
 import styles from "./app.module.css";
@@ -25,7 +24,7 @@ function App() {
   // end of postman fetch
 
   return (
-    <div>
+    <div className={styles.app}>
       <SearchHeader />
       <ul className={styles.ul}>
         <VideoList videos={videos} />

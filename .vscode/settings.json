@@ -1,4 +1,5 @@
 {
+  // 0615수
   "workbench.colorCustomizations": {
     "editor.background": "#292929",
     "editorGroupHeader.tabsBackground": "#292929",
@@ -28,7 +29,7 @@
     "statusBar.background": "#242937",
     "statusBar.foreground": "#ffffff"
   },
-  "workbench.colorTheme": "Default High Contrast",
+  "workbench.colorTheme": "Min Dark",
   "colorTabs.config": [
     {
       "regex": "src/*.css",
@@ -55,5 +56,5 @@
       "regex": ".*/desktop/.*"
     }
   ],
-  "window.title": "~[title]~${separator}${separator}${separator}${dirty}${activeEditorMedium} ${separator} ${rootName}"
+  "window.title": "~[title]~${separator}${dirty}${activeEditorMedium} ${separator} ${rootName}"
 }
