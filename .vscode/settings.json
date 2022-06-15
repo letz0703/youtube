@@ -1,9 +1,13 @@
 {
   "workbench.colorCustomizations": {
     "editor.background": "#292929",
+    "editorGroupHeader.tabsBackground": "#292929",
+    "editor.wordHighlightBackground": "#0066ff2a",
+    "editor.wordHighlightStrongBackground": "#0066ff2a",
     "[Winter is Coming (Dark Black)]": {
       "editorLineNumber.activeForeground": "#25a4ed",
-      "editorLineNumber.foreground": "#7d7979"
+      "editorLineNumber.foreground": "#7d7979",
+      "editor.lineHighlightBorder": "#1b1e2b"
     },
     "[Flatland Dark]": {
       "editor.background": "#292929",
@@ -24,7 +28,7 @@
     "statusBar.background": "#242937",
     "statusBar.foreground": "#ffffff"
   },
-  "workbench.colorTheme": "Nord",
+  "workbench.colorTheme": "Default High Contrast",
   "colorTabs.config": [
     {
       "regex": "src/*.css",
@@ -51,5 +55,5 @@
       "regex": ".*/desktop/.*"
     }
   ],
-  "window.title": "~[title]~${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${dirty}${activeEditorMedium} ${separator} ${rootName}"
+  "window.title": "~[title]~${separator}${separator}${separator}${dirty}${activeEditorMedium} ${separator} ${rootName}"
 }
