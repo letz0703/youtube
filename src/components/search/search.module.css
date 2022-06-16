@@ -1,0 +1,30 @@
+.search {
+  display: flex;
+  height: 4rem;
+  padding: 0.8em 1em;
+  justify-content: space-evenly;
+  background: black;
+  color: white;
+  align-items: center;
+  padding: 2em 1em;
+}
+.search .logo {
+  display: flex;
+  flex-direction: row;
+  padding-right: 0.3rem;
+}
+.search .logo img {
+  height: 20px;
+}
+.search input {
+  flex-basis: 90%;
+  height: 60px;
+  font-size: 1.4rem;
+  outline: 2px inset silver;
+  margin-right: 1rem;
+  padding: 1em;
+  background-color: revert;
+}
+.search button {
+  width: 50px;
+}/*# sourceMappingURL=search.module.css.map */

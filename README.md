@@ -1,3 +1,6 @@
+THU Jun 616
+* clearn working version 0881b66
+
 MON Jun13
 
 - Show video_item

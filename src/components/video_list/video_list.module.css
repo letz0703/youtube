@@ -1,6 +1,6 @@
 .videos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-}
-/*# sourceMappingURL=video_list.module.css.map */
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 45%;
+}/*# sourceMappingURL=video_list.module.css.map */

@@ -1,38 +1,40 @@
 .container {
-	// width: 50%;
-	padding: 0.2em;
+  padding: 0.2em;
 }
 
 .video {
-	cursor: pointer;
-	border: 1px solid lightgray;
-	display: flex;
-	align-items: center;
-	transition: transform 250ms ease-in;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid lightgray;
+  transition: transform 250ms ease-in;
+  box-shadow: 3px 3px 3px rgba(190, 190, 190, 0.5);
 }
 
 .video:hover {
-	transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .thumb {
-	// width: 40%;
-	height: 100%;
+  margin: 0.2em;
 }
-.title,
-.channel {
-	font-size: .8em;
-	margin: 0;
-	text-overflow: hidden;
-	text-overflow: ellipsis;
-	overflow: hidden;
-	color: red;
-	padding: 1em;
+.metadata {
+  color: blue;
+  margin-left: 0.2em;
 }
 
-.metadata {
-	margin-left: .2em;
-}
+.title,
 .channel {
-	font-size: 0.9rem;
+  font-size: 0.8 rem;
+  margin: 0;
+  text-overflow: hidden;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #555655;
+  padding: 1em;
+}
+
+.channel {
+  font-size: 0.5rem;
 }

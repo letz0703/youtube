@@ -3,45 +3,39 @@
 }
 
 .video {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   cursor: pointer;
   border: 1px solid lightgray;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: -webkit-transform 250ms ease-in;
-  transition: -webkit-transform 250ms ease-in;
   transition: transform 250ms ease-in;
-  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+  box-shadow: 3px 3px 3px rgba(190, 190, 190, 0.5);
 }
 
 .video:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .thumb {
-  height: 100%;
+  margin: 0.2em;
+}
+
+.metadata {
+  color: blue;
+  margin-left: 0.2em;
 }
 
 .title,
 .channel {
-  font-size: .8em;
+  font-size: 0.8 rem;
   margin: 0;
   text-overflow: hidden;
   text-overflow: ellipsis;
   overflow: hidden;
-  color: red;
+  color: #555655;
   padding: 1em;
 }
 
-.metadata {
-  margin-left: .2em;
-}
-
 .channel {
-  font-size: 0.9rem;
-}
-/*# sourceMappingURL=video_item.module.css.map */
+  font-size: 0.5rem;
+}/*# sourceMappingURL=video_item.module.css.map */
