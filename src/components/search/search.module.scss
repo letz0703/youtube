@@ -3,18 +3,19 @@
 	height: 4rem;
 	padding: 0.8em 1em;
 	justify-content: space-evenly;
-	background:black;
+	background: black;
 	color: white;
 	align-items: center;
-	padding: 2em 1em;
 	.logo {
 		display: flex;
 		flex-direction: row;
-		padding-right: .3rem;
+		padding-right: 0.3rem;
 
-		img{ height: 20px; }
+		img {
+			height: 20px;
+		}
 		// youtube {
-	// 	color:#efefef ;
+		// 	color:#efefef ;
 		// 	font-size: 1.4rem;
 		// }
 	}
@@ -22,7 +23,7 @@
 		flex-basis: 90%;
 		height: 60px;
 		font-size: 1.4rem;
-		outline: 2px inset silver ; // double, groove, ridge, inset, outset, double
+		outline: 2px inset silver; // double, groove, ridge, inset, outset, double
 		// width: 80%;
 		margin-right: 1rem;
 		padding: 1em;
