@@ -1,28 +1,31 @@
-.header {
+.search {
   display: flex;
   height: 4rem;
+  padding: 0.8em 1em;
   justify-content: space-evenly;
+  background: black;
+  color: white;
   align-items: center;
   padding: 0.5em 1em;
 }
-.header logo {
+.search logo {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-right: 1em;
 }
-.header logo img {
+.search logo img {
   width: 3rem;
 }
-.header logo youtube {
-  color: #344BF7;
-  font-size: 0.7rem;
-}
-.header input {
-  height: 50px;
-  width: 80%;
+.search input {
+  flex-basis: 100%;
+  height: 60px;
+  font-size: 1.4rem;
+  outline: 2px inset silver;
   margin-right: 1rem;
   padding: 1em;
+  background-color: revert;
 }
-.header button {
-  width: 2.5em;
+.search button {
+  width: 50px;
 }/*# sourceMappingURL=search.module.css.map */
