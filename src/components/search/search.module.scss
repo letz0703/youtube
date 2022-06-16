@@ -6,22 +6,20 @@
 	background:black;
 	color: white;
 	align-items: center;
-	padding: 0.5em 1em;
-	logo {
+	padding: 2em 1em;
+	.logo {
 		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding-right: 1em;
-		img{
-			width: 3rem;
-		}
+		flex-direction: row;
+		padding-right: .3rem;
+
+		img{ height: 20px; }
 		// youtube {
-		// 	color:#efefef ;
+	// 	color:#efefef ;
 		// 	font-size: 1.4rem;
 		// }
 	}
 	input {
-		flex-basis: 100%;
+		flex-basis: 90%;
 		height: 60px;
 		font-size: 1.4rem;
 		outline: 2px inset silver ; // double, groove, ridge, inset, outset, double

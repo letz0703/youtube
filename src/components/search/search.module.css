@@ -6,19 +6,18 @@
   background: black;
   color: white;
   align-items: center;
-  padding: 0.5em 1em;
+  padding: 2em 1em;
 }
-.search logo {
+.search .logo {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-right: 1em;
+  flex-direction: row;
+  padding-right: 0.3rem;
 }
-.search logo img {
-  width: 3rem;
+.search .logo img {
+  height: 20px;
 }
 .search input {
-  flex-basis: 100%;
+  flex-basis: 90%;
   height: 60px;
   font-size: 1.4rem;
   outline: 2px inset silver;
