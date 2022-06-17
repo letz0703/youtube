@@ -1,13 +1,12 @@
 import React, { useRef } from "react";
 import styles from "./search.module.css";
+import { ReactComponent as SvgSearch } from "./search.svg";
 
-const Search = () => {
+const Search = ({ onSearch }) => {
   const refInput = useRef();
-
   const handleSearch = () => {
     const value = refInput.current.value;
-    console.log(value);
-    // onSearch(value);
+    onSearch(value);
   };
 
   const onClick = () => {
@@ -22,7 +21,7 @@ const Search = () => {
   return (
     <div className={styles.search}>
       <div className={styles.logo}>
-        <img src="./images/logo.png" className={styles.logo} />
+        <img src="./images/logo.png" className={styles.logo} alt="logo" />
         {/* <youtube> YOUTUBE</youtube> */}
       </div>
       <input
@@ -32,7 +31,8 @@ const Search = () => {
         ref={refInput}
       />
       <button type="submit" onClick={onClick}>
-        <img src="/images/search.png" alt="search" />
+        {/* <img src="/images/search.png" alt="search" /> */}
+        <SvgSearch className={styles.svg_search} />
       </button>
     </div>
   );
