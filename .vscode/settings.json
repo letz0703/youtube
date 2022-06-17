@@ -29,7 +29,7 @@
     "statusBar.background": "#242937",
     "statusBar.foreground": "#ffffff"
   },
-  "workbench.colorTheme": "Flatland Dark",
+  "workbench.colorTheme": "Nord",
   "colorTabs.config": [
     {
       "regex": "src/*.css",
@@ -57,5 +57,5 @@
       "regex": ".*/desktop/.*"
     }
   ],
-  "window.title": "~[title]~${separator}${separator}${dirty}${activeEditorMedium} ${separator} ${rootName}"
+  "window.title": "~[title]~${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${separator}${dirty}${activeEditorMedium} ${separator} ${rootName}"
 }

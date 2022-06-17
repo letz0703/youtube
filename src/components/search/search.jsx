@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import styles from "./search.module.css";
+import { ReactComponent as SvgSearch } from "./search.svg";
 
 const Search = () => {
   const refInput = useRef();
@@ -32,7 +33,8 @@ const Search = () => {
         ref={refInput}
       />
       <button type="submit" onClick={onClick}>
-        <img src="/images/search.png" alt="search" />
+        {/* <img src="/images/search.png" alt="search" /> */}
+        <SvgSearch className={styles.svg_search} />
       </button>
     </div>
   );
