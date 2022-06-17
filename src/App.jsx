@@ -6,6 +6,22 @@ import Search from "./components/search/search";
 function App() {
   const [videos, setVideos] = useState([]);
 
+  const search = (query) => {
+    const requestOptions = {
+      method: "GET",
+      redirect: "follow"
+    };
+
+    fetch(
+      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=2&q=${query}&type=video&key=AIzaSyCTNuUzbi5oPOZWRYAT-0rJF9jZKrKWfSM&key=AIzaSyCTNuUzbi5oPOZWRYAT-0rJF9jZKrKWfSM`,
+      requestOptions
+    )
+      .then((response) => response.json())
+      .then((result) => setVideos(result.items))
+      .then((result) => setVideos(result.items))
+      .catch((error) => console.log("error", error));
+  };
+
   useEffect(() => {
     //paste postman code here
     const requestOptions = {
@@ -21,11 +37,12 @@ function App() {
       .then((result) => setVideos(result.items))
       .catch((error) => console.log("error", error));
   }, []);
+
   // end of postman fetch
 
   return (
     <div className={styles.app}>
-      <Search />
+      <Search onSearch={search} />
       <ul className={styles.ul}>
         <VideoList videos={videos} />
       </ul>
