@@ -22,16 +22,9 @@
     "editor.selectionHighlightBackground": "#135564",
     "titleBar.inactiveBackground": "#753a07",
     "sideBarTitle.foreground": "#753a07",
-    "sideBarSectionHeader.foreground": "#ffffff",
-    "tab.activeBorder": "#242937",
-    "titleBar.activeBackground": "#242937",
-    "titleBar.activeForeground": "#ffffff",
-    "activityBar.background": "#242937",
-    "activityBar.foreground": "#ffffff",
-    "statusBar.background": "#242937",
-    "statusBar.foreground": "#ffffff"
+    "sideBarSectionHeader.foreground": "#ffffff"
   },
-  "workbench.colorTheme": "Flatland Dark",
+  "workbench.colorTheme": "Default High Contrast",
   "colorTabs.config": [
     {
       "regex": "src/*.css",
@@ -59,5 +52,5 @@
       "regex": ".*/desktop/.*"
     }
   ],
-  "window.title": "~[title]~${separator}${separator}${separator}${separator}${separator}${dirty}${activeEditorMedium} ${separator} ${rootName}"
+  "window.title": "~[title]~${separator}${separator}${separator}${separator}${separator}${separator}${separator}${dirty}${activeEditorMedium} ${separator} ${rootName}"
 }
