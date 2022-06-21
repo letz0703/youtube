@@ -5,6 +5,7 @@ import Search from "./components/search/search";
 
 function App({ youtube }) {
   const [videos, setVideos] = useState([]);
+  const [selectedVideo, setSelectedVideo] = useState(null);
 
   const search = (query) => {
     youtube

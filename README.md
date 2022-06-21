@@ -1,5 +1,7 @@
 THU Jun 616
-* clearn working version 0881b66
+
+- [selected video](./src/App.jsx)
+- clearn working version 0881b66
 
 MON Jun13
 
