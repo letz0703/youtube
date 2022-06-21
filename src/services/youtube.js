@@ -1,7 +1,7 @@
 class Youtube {
   constructor(key) {
     this.key = key;
-    const requestOptions = {
+    const getRequestOptions = {
       method: "GET",
       redirect: "follow"
     };
@@ -10,7 +10,7 @@ class Youtube {
   mostPopular() {
     return fetch(
       `https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=25&regionCode=US&key=${this.key}`,
-      this.requestOptions
+      this.getRequestOptions
     )
       .then((response) => response.json())
       .then((result) => result.items);
@@ -19,7 +19,7 @@ class Youtube {
   search(query) {
     return fetch(
       `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=12&q=${query}&type=video&key=${this.key}`,
-      this.requestOptions
+      this.getRequestOptions
     )
       .then((response) => response.json())
       .then((result) =>
