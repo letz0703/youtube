@@ -2,8 +2,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   vertical-align: baseline;
 }
@@ -27,7 +25,7 @@
   -webkit-box-sizing: inheirt;
   box-sizing: border-box;
   /* outline: 0; */
-  /* outline: none; */
+  outline: none;
   border: 0;
 }
 
@@ -36,8 +34,8 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-box-sizing: inheirt;
-  box-sizing: inheirt;
-  line-height: 1.7;
+  /* box-sizing: inheirt; */
+  line-height: 1.2;
   text-align: center;
 }
 

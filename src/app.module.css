@@ -1,3 +1,16 @@
 .app {
-  max-width: 80rem;
-}/*# sourceMappingURL=app.module.css.map */
+  max-width: 80%;
+  margin-top: 0.5rem;
+  padding: 1rem;
+}
+
+.content {
+  display: flex;
+  margin-top: 0.5em;
+}
+.content .detail {
+  flex: 1 1 70%;
+}
+.content .list {
+  flex: 1 1 30%;
+}

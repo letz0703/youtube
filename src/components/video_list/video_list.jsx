@@ -1,7 +1,19 @@
 import VideoItem from "../video_item/video_item";
-const VideoList = ({ videos, onVideoClick }) =>
-  videos.map((video) => (
-    <VideoItem onVideoClick={onVideoClick} key={video.id} video={video} />
-  ));
+import styles from "./video_list.module.css";
+
+const VideoList = ({ videos, onVideoClick, display }) => {
+  return (
+    <ul className={styles.videos}>
+      {videos.map((video) => (
+        <VideoItem
+          onVideoClick={onVideoClick}
+          key={video.id}
+          video={video}
+          display={display}
+        />
+      ))}
+    </ul>
+  );
+};
 
 export default VideoList;

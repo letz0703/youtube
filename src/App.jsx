@@ -28,10 +28,20 @@ function App({ youtube }) {
   return (
     <div className={styles.app}>
       <Search onSearch={search} />
-      {selectedVideo && <VideoDetail video={selectedVideo} />}
-      <ul className={styles.ul}>
-        <VideoList videos={videos} onVideoClick={selectVideo} />
-      </ul>
+      <section className={styles.content}>
+        {selectedVideo && (
+          <div className={styles.detail}>
+            <VideoDetail video={selectedVideo} />
+          </div>
+        )}
+        <div className={styles.list}>
+          <VideoList
+            videos={videos}
+            onVideoClick={selectVideo}
+            display={selectedVideo ? "list" : "grid"}
+          />
+        </div>
+      </section>
     </div>
   );
 }

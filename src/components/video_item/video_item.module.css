@@ -2,14 +2,21 @@
   padding: 0.2em;
 }
 
+.container.grid {
+  width: 50%;
+}
+
+.container.list {
+  width: 90%;
+}
+
 .video {
   display: flex;
-  flex-direction: row;
   align-items: center;
   cursor: pointer;
+  box-shadow: 3px 3px 3px rgba(190, 190, 190, 0.5);
   border: 1px solid lightgray;
   transition: transform 250ms ease-in;
-  box-shadow: 3px 3px 3px rgba(190, 190, 190, 0.5);
 }
 
 .video:hover {
@@ -17,7 +24,7 @@
 }
 
 .thumb {
-  margin: 0.2em;
+  margin: 0.1em;
 }
 
 .metadata {
@@ -37,5 +44,11 @@
 }
 
 .channel {
-  font-size: 0.5rem;
+  font-size: 0.6rem;
+}
+
+@media screen and (max-width: 740px) {
+  .container.grid {
+    width: 100%;
+  }
 }/*# sourceMappingURL=video_item.module.css.map */
