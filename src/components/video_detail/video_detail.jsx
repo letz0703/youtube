@@ -5,6 +5,7 @@ const VideoDetail = ({ video, video: { snippet } }) => {
   return (
     <section className={styles.detail}>
       <iframe
+        title="LetTube"
         id="ytplayer"
         type="text/html"
         width="100%"

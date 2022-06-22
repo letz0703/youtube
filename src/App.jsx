@@ -21,7 +21,7 @@ function App({ youtube }) {
     youtube
       .mostPopular() //
       .then((videos) => setVideos(videos));
-  }, []);
+  }, [youtube]);
 
   // end of postman fetch
 
