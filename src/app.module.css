@@ -1,7 +1,6 @@
 .app {
   max-width: 80%;
-  margin-top: 0.5rem;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .content {
@@ -14,3 +13,10 @@
 .content .list {
   flex: 1 1 30%;
 }
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 740px) {
+  .app {
+    background-color: blue;
+  }
+}/*# sourceMappingURL=app.module.css.map */

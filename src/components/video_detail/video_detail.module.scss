@@ -1,3 +1,14 @@
 .detail {
   padding: 0.2em;
+  h2 {
+    color: rgb(57, 57, 57);
+    padding-top: 1em;
+  }
+  h3 {
+    color: green;
+  }
+
+  pre {
+    white-space: pre-wrap;
+  }
 }

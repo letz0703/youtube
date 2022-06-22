@@ -1,7 +1,3 @@
-.container {
-  padding: 0.2em;
-}
-
 .container.grid {
   width: 50%;
 }
@@ -47,8 +43,8 @@
   font-size: 0.6rem;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 740px) {
   .container.grid {
     width: 100%;
   }
-} /*# sourceMappingURL=video_item.module.css.map */
+}/*# sourceMappingURL=video_item.module.css.map */

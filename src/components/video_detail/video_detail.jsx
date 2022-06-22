@@ -17,7 +17,7 @@ const VideoDetail = ({ video, video: { snippet } }) => {
       ></iframe>
       <h2>{snippet.title}</h2>
       <h3>{snippet.channelTitle}</h3>
-      <pre>{snippet.channelDescription}</pre>
+      <pre>{snippet.description}</pre>
       {/* //https://developers.google.com/youtube/youtube_player_demo?hl=ko */}
     </section>
   );
