@@ -5,6 +5,12 @@
   justify-content: center;
   vertical-align: baseline;
 }
+pre {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0;
+}
 
 :root {
   --text-color: #f0f4f5;

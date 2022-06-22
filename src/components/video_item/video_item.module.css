@@ -47,8 +47,8 @@
   font-size: 0.6rem;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 1024px) {
   .container.grid {
     width: 100%;
   }
-}/*# sourceMappingURL=video_item.module.css.map */
+} /*# sourceMappingURL=video_item.module.css.map */
