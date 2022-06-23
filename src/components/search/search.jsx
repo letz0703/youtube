@@ -26,7 +26,7 @@ const Search = memo(({ onSearch }) => {
       </div>
       <input
         type="text"
-        placeholder="search... @youtube"
+        placeholder="The World's Top 10 now!"
         onKeyPress={onKeyPress}
         ref={refInput}
       />
