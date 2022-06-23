@@ -43,7 +43,12 @@
   font-size: 0.6rem;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 1080px) {
+  .video {
+    display: flex;
+    flex-direction: column;
+  }
+
   .container.grid {
     width: 100%;
   }

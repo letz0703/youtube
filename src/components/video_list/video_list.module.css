@@ -2,10 +2,4 @@
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
-}
-
-@media screen and (max-width: 740px) {
-  .video {
-    flex-direction: column;
-  }
 }/*# sourceMappingURL=video_list.module.css.map */

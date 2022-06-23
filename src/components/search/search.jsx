@@ -1,8 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef, memo } from "react";
 import styles from "./search.module.css";
 import { ReactComponent as SvgSearch } from "./search.svg";
 
-const Search = ({ onSearch }) => {
+const Search = memo(({ onSearch }) => {
   const refInput = useRef();
   const handleSearch = () => {
     const value = refInput.current.value;
@@ -36,6 +36,6 @@ const Search = ({ onSearch }) => {
       </button>
     </div>
   );
-};
+});
 
 export default Search;

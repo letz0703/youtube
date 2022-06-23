@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import VideoList from "./components/video_list/video_list";
 import styles from "./app.module.css";
 import Search from "./components/search/search";
@@ -11,12 +11,16 @@ function App({ youtube }) {
     setSelectedVideo(video);
   };
 
-  const search = (query) => {
-    setSelectedVideo(null);
-    youtube
-      .search(query) //
-      .then((videos) => setVideos(videos));
-  };
+  const search = useCallback(
+    // 메모리 잡아 먹으므로 조심!!
+    (query) => {
+      setSelectedVideo(null);
+      youtube
+        .search(query) //
+        .then((videos) => setVideos(videos));
+    },
+    [youtube]
+  );
 
   useEffect(() => {
     youtube

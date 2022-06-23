@@ -23,7 +23,10 @@ class Youtube {
     )
       .then((response) => response.json())
       .then((result) =>
-        result.items.map((item) => ({ ...item, id: item.etag }))
+        result.items.map((item) => {
+          console.log(item);
+          return { ...item, id: item.id.videoId };
+        })
       )
       .then((items) => items);
   }
