@@ -12,7 +12,6 @@ function App({ youtube }) {
   };
 
   const search = useCallback(
-    // 메모리 잡아 먹으므로 조심!!
     (query) => {
       setSelectedVideo(null);
       youtube
@@ -29,7 +28,7 @@ function App({ youtube }) {
   }, [youtube]);
 
   // end of postman fetch
-
+  /*   console.log("header!!!"); */
   return (
     <div className={styles.app}>
       <Search onSearch={search} />
