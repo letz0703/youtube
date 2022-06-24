@@ -14,4 +14,11 @@
   flex: 1 1 30%;
 }
 
-/* On screens that are 992px wide or less, go from four columns to two columns *//*# sourceMappingURL=app.module.css.map */
+@media screen and (max-width: 78rem) {
+  .content {
+    flex-direction: column;
+  }
+  .content p {
+    padding-bottom: 1rem;
+  }
+}/*# sourceMappingURL=app.module.css.map */

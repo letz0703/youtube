@@ -14,9 +14,11 @@
   margin-top: 0.5em;
 }
 
-/* On screens that are 992px wide or less, go from four columns to two columns */
-// @media screen and (max-width: 740px) {
-// .app {
-// background-color: blue;
-// }
-// }
+@media screen and (max-width: 78rem) {
+  .content {
+    flex-direction: column;
+    p {
+      padding-bottom: 1rem;
+    }
+  }
+}
